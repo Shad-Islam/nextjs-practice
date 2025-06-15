@@ -6,13 +6,10 @@ export default function ServicePage() {
       <p>This is Service Page</p>
       <ul>
         <li>
-          <Link href="/service/1">Service 1</Link>
+          <Link href="/service/service1">Service 1</Link>
         </li>
         <li>
-          <Link href="/service/2">Service 2</Link>
-        </li>
-        <li>
-          <Link href="/service/3">Service 3</Link>
+          <Link href="/service/service2">Service 2</Link>
         </li>
       </ul>
     </div>
