@@ -1,19 +1,16 @@
 import Link from "next/link";
+import serviceData from "./serviceData";
 
 export default function ServicePage() {
   return (
     <div className="text-center mt-10">
       <p>This is Service Page</p>
       <ul>
-        <li>
-          <Link href="/service/service1">Service 1</Link>
-        </li>
-        <li>
-          <Link href="/service/service2">Service 2</Link>
-        </li>
-        <li>
-          <Link href="/service/service3">Service 3</Link>
-        </li>
+        {serviceData.map((service) => (
+          <li key={service.id}>
+            <Link href={`/service/${service.id}`}>{service.name}</Link>
+          </li>
+        ))}
       </ul>
     </div>
   );
