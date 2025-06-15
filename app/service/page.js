@@ -11,6 +11,9 @@ export default function ServicePage() {
         <li>
           <Link href="/service/service2">Service 2</Link>
         </li>
+        <li>
+          <Link href="/service/service3">Service 3</Link>
+        </li>
       </ul>
     </div>
   );

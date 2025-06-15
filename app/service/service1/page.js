@@ -1,5 +1,3 @@
 export default function ServiceOne() {
-  return (
-    <div>Service One</div>
-  )
+  return <div className="text-center mt-10">Service One</div>;
 }
