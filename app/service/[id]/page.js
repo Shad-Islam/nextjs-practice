@@ -1,13 +1,15 @@
 import React from "react";
-import serviceData from "../serviceData";
+import serviceData from "@service/serviceData";
 import { notFound } from "next/navigation";
 
 export default function servicePage({ params }) {
   const { id } = params;
-  if (id > serviceData.length) {
+
+  const service = serviceData.find((service) => service.id === parseInt(id));
+
+  if (!service) {
     notFound();
   }
-  const service = serviceData.find((service) => service.id === parseInt(id));
 
   return (
     <div className="text-center mt-10">
